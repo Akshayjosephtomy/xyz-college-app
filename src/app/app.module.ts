@@ -10,22 +10,26 @@ import { AddfacultyComponent } from './addfaculty/addfaculty.component';
 import { ViewallstudentComponent } from './viewallstudent/viewallstudent.component';
 import { ViewallfacultyComponent } from './viewallfaculty/viewallfaculty.component';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 const link:Routes=[
   {
     path:"",component:LoginComponent
   },
   {
-    path:"/addstudent",component:AddstudentComponent
+    path:"addstudent",component:AddstudentComponent
   },
   {
-    path:"/viewstudents",component:ViewallstudentComponent
+    path:"viewstudents",component:ViewallstudentComponent
   },
   {
-    path:"/addfaculty",component:AddfacultyComponent
+    path:"addfaculty",component:AddfacultyComponent
   },
   {
-    path:"/viewfaculty",component:ViewallfacultyComponent
+    path:"viewfaculty",component:ViewallfacultyComponent
+  },
+  {
+    path:"dashboard",component:NavbarComponent
   }
 ]
 
@@ -43,6 +47,7 @@ const link:Routes=[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(link),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

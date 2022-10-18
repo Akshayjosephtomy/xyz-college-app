@@ -63,7 +63,7 @@
                     <textarea name="gaddress" [(ngModel)]="gaddress" placeholder="Address" id="" cols="15" rows="4" class="form-control"></textarea>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-success" (click)="readValue()">Submit</button>
+                    <button class="btn btn-success" (click)="readValue()" [disabled]="status">Submit</button>
                 </div>
         </div>
     </div>
