@@ -1,6 +1,8 @@
+<app-navbar></app-navbar>
 <div class="container">
     <div class="row">
-        <div class="col">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="Name" class="form-label">Name</label>
                     <input type="text" placeholder="Name" class="form-control" name="name" [(ngModel)]="name">
@@ -53,7 +55,7 @@
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="email" class="form-label">Parent E-mail</label>
                     <input type="email" placeholder="Parent Email" class="form-control" name="pemail" [(ngModel)]="pemail">
-                </div>>
+                </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="Parent Name" class="form-label">Guardian Name</label>
                     <input type="text" placeholder="Guardian Name" class="form-control" name="gname" [(ngModel)]="gname">
@@ -66,5 +68,6 @@
                     <button class="btn btn-success" (click)="readValue()" [disabled]="status">Submit</button>
                 </div>
         </div>
+    </div>
     </div>
 </div>

@@ -19,7 +19,8 @@ export class LoginComponent implements OnInit {
       "password":this.password
     }
     if (this.name=="admin" && this.password=="admin") {
-      this.myrouter.navigate(["/dashboard"])
+      alert("Login Successfull")
+      this.myrouter.navigate(["/addstudent"])
     } else {
       alert("Invalid Credintials")
     }

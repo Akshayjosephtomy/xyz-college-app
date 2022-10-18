@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -18,18 +19,18 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                  <tr *ngFor="let i of viewStudent">
+                    <td>{{i.name}}</td>
+                    <td>{{i.roll}}</td>
+                    <td>{{i.adm}}</td>
+                    <td>{{i.college}}</td>
+                    <td>{{i.department}}</td>
+                    <td>{{i.blood}}</td>
+                    <td>{{i.dob}}</td>
+                    <td>{{i.parent}}</td>
+                    <td>{{i.parentemail}}</td>
+                    <td>{{i.guardian}}</td>
+                    <td>{{i.address}}</td>
                   </tr>
                 </tbody>
               </table>

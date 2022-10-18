@@ -37,6 +37,8 @@ export class AddstudentComponent implements OnInit {
       "gname":this.gname,
       "gaddress":this.gaddress
     }
+    console.log(data)
+    alert("Student added Successfully")
     this.name="",
     this.no="",
     this.adm="",

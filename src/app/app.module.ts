@@ -28,9 +28,6 @@ const link:Routes=[
   {
     path:"viewfaculty",component:ViewallfacultyComponent
   },
-  {
-    path:"dashboard",component:NavbarComponent
-  }
 ]
 
 @NgModule({
