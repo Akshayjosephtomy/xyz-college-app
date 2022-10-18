@@ -42,7 +42,7 @@ const link:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(link)
+    RouterModule.forRoot(link),
   ],
   providers: [],
   bootstrap: [AppComponent]
