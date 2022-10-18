@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddstudentComponent } from './addstudent/addstudent.component';
 import { AddfacultyComponent } from './addfaculty/addfaculty.component';
 import { ViewallstudentComponent } from './viewallstudent/viewallstudent.component';
+import { ViewallfacultyComponent } from './viewallfaculty/viewallfaculty.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ViewallstudentComponent } from './viewallstudent/viewallstudent.compone
     NavbarComponent,
     AddstudentComponent,
     AddfacultyComponent,
-    ViewallstudentComponent
+    ViewallstudentComponent,
+    ViewallfacultyComponent
   ],
   imports: [
     BrowserModule,
